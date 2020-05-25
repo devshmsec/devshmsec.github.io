@@ -1,0 +1,57 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+
+title: devshmsec
+email: 1mv1n4yv3rm4@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Bloging website to post walkthroughs and articles about hacking and CTFs.
+baseurl:  # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+jekyll-theme-gruvbox:
+  social_links:
+    twitter:  devshmsec
+    github:   devshmsec
+    instagram:  devshmsec
+    linkedin: devshmsec
+    youtube_channel:  UC-dB1OagL9ixiektaFVEnew
+    youtube_channel_name: Vinay Verma
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Build settings
+theme: jekyll-theme-gruvbox
+
+plugins:
+  - jekyll-feed
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
