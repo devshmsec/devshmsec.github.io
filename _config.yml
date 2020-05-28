@@ -14,12 +14,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 jekyll-theme-gruvbox:
   social_links:
-    twitter:  devshmsec
-    github:   devshmsec
-    instagram:  devshmsec
+    twitter: devshmsec
+    github: devshmsec
+    instagram: devshmsec
     linkedin: devshmsec
-    youtube_channel:  UC-dB1OagL9ixiektaFVEnew
-    youtube_channel_name: Vinay Verma
+    youtube_channel: UC-dB1OagL9ixiektaFVEnew
 
 markdown: kramdown
 highlighter: rouge
@@ -27,6 +26,14 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+author:
+  name: Vinay Verma
+  email:  1mv1n4yv3rm4@gmail.com
+
+header_pages:
+  - blogs.md
+  - about.md
 
 # Build settings
 theme: jekyll-theme-gruvbox

@@ -4,16 +4,20 @@
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}"> $ cat /dev/shm/sec </a>
 
         {%- if titles_size > 0 -%}
         <nav class="site-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger">
                 <span class="menu-icon">
-                    <svg viewBox="0 0 18 15" width="18px" height="15px">
-                        <path
-                            d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z" />
+                    <svg class="bi bi-outlet" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3.34 2.994c.275-.338.68-.494 1.074-.494h7.172c.393 0 .798.156 1.074.494.578.708 1.84 2.534 1.84 5.006 0 2.472-1.262 4.297-1.84 5.006-.276.338-.68.494-1.074.494H4.414c-.394 0-.799-.156-1.074-.494C2.762 12.297 1.5 10.472 1.5 8c0-2.472 1.262-4.297 1.84-5.006zm1.074.506a.376.376 0 0 0-.299.126C3.599 4.259 2.5 5.863 2.5 8c0 2.137 1.099 3.74 1.615 4.374.06.073.163.126.3.126h7.17c.137 0 .24-.053.3-.126.516-.633 1.615-2.237 1.615-4.374 0-2.137-1.099-3.74-1.615-4.374a.376.376 0 0 0-.3-.126h-7.17z" />
+                        <path fill-rule="evenodd"
+                            d="M6 5.5a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5z" />
+                        <path d="M7 10v1h2v-1a1 1 0 0 0-2 0z" />
                     </svg>
                 </span>
             </label>
@@ -21,9 +25,11 @@
             <div class="trigger">
                 {%- for path in page_paths -%}
                 {%- assign my_page = site.pages | where: "path", path | first -%}
+
                 {%- if my_page.title -%}
                 <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                 {%- endif -%}
+
                 {%- endfor -%}
             </div>
         </nav>
