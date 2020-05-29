@@ -4,7 +4,7 @@
 .site-header {
     min-height: $spacing-unit * 1.865;
     line-height: $base-line-height * $base-font-size * 2.25;
-    background-color: lighten($color: $background, $amount: 10);
+    background-color: darken($color: $background, $amount: 5);
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -351,5 +351,88 @@
 @media screen and (min-width: $on-large) {
     .one-half {
         width: calc(50% - (#{$spacing-unit} / 2));
+    }
+}
+
+/**
+  * Sidebar and post content
+  */
+
+.page-content .wrapper {
+    section {
+        width: 75%;
+        display: block;
+        float: right;
+    }
+
+    small {
+        font-size: 12px;
+    }
+
+    nav {
+        width: 24%;
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        margin-left: -800px;
+        text-align: right;
+
+        ul {
+            list-style: none;
+            list-style-image: none;
+            font-size: 14px;
+            line-height: 24px;
+
+            li {
+                padding: 5px 0px;
+                line-height: 16px;
+                padding-right: 17px;
+                position: relative;
+                right: -12px;
+
+                &.tag-h1 {
+                    font-size: 1.2em;
+
+                    a {
+                        font-weight: bold;
+                        color: $red;
+                    }
+
+                    + .tag-h2 {
+                        color: $yellow;
+                    }
+                }
+
+                &.tag-h2 {
+                    + .tag-h1 {
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            a {
+                color: $blue;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+
+            .active {
+                border-right: solid 4px $orange;
+                padding-right: 13px;
+            }
+        }
+
+        h5 {
+            margin-top: 100px;
+            color: $green;
+        }
+
+        .share a img {
+            height: 26px;
+            width: 26px;
+            padding-left: 4px;
+        }
     }
 }

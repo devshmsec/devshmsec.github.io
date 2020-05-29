@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -57,6 +57,8 @@ end
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
+
+# Second Heading
 
 ### There's a horizontal rule below this.
 
