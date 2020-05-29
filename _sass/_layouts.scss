@@ -7,7 +7,8 @@
     background-color: darken($color: $background, $amount: 5);
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: sticky;
+    top: 0px;
 }
 
 .site-title {
@@ -363,6 +364,18 @@
         width: 75%;
         display: block;
         float: right;
+
+        @media screen and (max-width: $on-palm) {
+            width: 100%;
+        }
+
+        a img {
+            @include media-query($on-palm) {
+                padding-right: 6px;
+                height: 26px;
+                width: 26px;
+            }
+        }
     }
 
     small {
@@ -424,15 +437,26 @@
             }
         }
 
-        h5 {
+        #share-text {
             margin-top: 100px;
-            color: $green;
+            margin-right: 5px;
+            color: $foreground3;
         }
 
         .share a img {
+            padding-left: 6px;
             height: 26px;
             width: 26px;
-            padding-left: 4px;
+        }
+
+        @media screen and (max-width: $on-laptop) {
+            display: none;
         }
     }
+}
+
+.page-content .wrapper a img {
+    padding-right: 6px;
+    height: 26px;
+    width: 26px;
 }

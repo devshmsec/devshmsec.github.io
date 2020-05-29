@@ -29,6 +29,13 @@ $(function () {
 
     $(".page-content .wrapper nav").prepend("<h2>Table of Contents</h2>");
 
+    if (window.matchMedia('(max-width: 600px)').matches) {
+
+        var share_html = $(".share").html();
+        $(".share").empty();
+        $(".page-content .wrapper section").append(share_html);
+    }
+
     sectionHeight();
 
     $('img').on('load', sectionHeight);
