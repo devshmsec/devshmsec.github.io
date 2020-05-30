@@ -1,6 +1,7 @@
 /**
  * Site header
  */
+
 .site-header {
     min-height: $spacing-unit * 1.865;
     line-height: $base-line-height * $base-font-size * 2.25;
@@ -123,6 +124,7 @@
 /**
    * Site footer
    */
+
 .site-footer {
     border-top: 1px solid $border-color-01;
     padding: $spacing-unit 0;
@@ -200,6 +202,7 @@
 /**
    * Page content
    */
+
 .page-content {
     padding: $spacing-unit 0;
     flex: 1 0 auto;
@@ -323,6 +326,7 @@
 /**
    * Pagination navbar
    */
+
 .pagination {
     margin-bottom: $spacing-unit;
     @extend .social-media-list;
@@ -349,6 +353,7 @@
 /**
    * Grid helpers
    */
+
 @media screen and (min-width: $on-large) {
     .one-half {
         width: calc(50% - (#{$spacing-unit} / 2));
@@ -443,20 +448,88 @@
             color: $foreground3;
         }
 
-        .share a img {
-            padding-left: 6px;
-            height: 26px;
-            width: 26px;
-        }
-
         @media screen and (max-width: $on-laptop) {
             display: none;
         }
     }
 }
 
-.page-content .wrapper a img {
-    padding-right: 6px;
+/*
+    * About layout
+    */
+
+h1 #name {
+    font-family: "Lato";
+    font-size: xx-large;
+    margin-top: 3rem;
+}
+
+#username {
+    font-family: "Cascadia Code";
+}
+
+.fab {
     height: 26px;
     width: 26px;
+    margin-right: 0.5rem;
+}
+
+.fa-twitter-square,
+.fa-linkedin-square {
+    color: $blue;
+}
+
+.fa-reddit-square {
+    color: $orange;
+}
+
+.fa-instagram-square {
+    color: $purple;
+}
+
+.fa-github-square {
+    color: $foreground3;
+}
+
+.fa-youtube-square {
+    color: $red;
+}
+
+#profile #picture {
+    height: 300px;
+    width: 300px;
+    float: left;
+
+    @include media-query($on-palm) {
+        height: auto;
+        width: auto;
+        margin-left: auto;
+    }
+}
+
+#description {
+    padding-top: 1rem;
+}
+
+#introduction {
+    @include media-query($on-palm) {
+        margin: auto;
+        padding: 0px;
+    }
+}
+
+a button#resume {
+    font-family: Lato;
+    background: $red;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: $orange;
+}
+
+#content {
+    margin-top: 3rem;
+}
+
+.jumbotron {
+    display: grid;
 }

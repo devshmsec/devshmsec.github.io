@@ -9,7 +9,7 @@ title: devshmsec
 email: 1mv1n4yv3rm4@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Bloging website to post walkthroughs and articles about hacking and CTFs.
-baseurl:  # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 jekyll-theme-gruvbox:
