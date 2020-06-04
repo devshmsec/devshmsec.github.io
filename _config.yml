@@ -36,7 +36,7 @@ header_pages:
   - about.md
 
 # Build settings
-theme: jekyll-theme-gruvbox
+theme: matryoshka
 
 plugins:
   - jekyll-feed
