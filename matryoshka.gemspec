@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["1mv1n4yv3rm4@gmail.com"]
 
   spec.summary       = "This theme is for jekyll pages insipired by gruvbox colorscheme."
-  spec.homepage      = "https://github.com/devshmsec/jekyll-theme-gruvbox"
+  spec.homepage      = "https://github.com/devshmsec/devshmsec.github.io"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"]  = "theme"

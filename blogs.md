@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: blogs
 title: Blogs
 permalink: /blogs.html
 ---
-
-# Recent Blogs
