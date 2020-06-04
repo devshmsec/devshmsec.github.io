@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-gruvbox"
+  spec.name          = "matryoshka"
   spec.version       = "0.1.0"
   spec.authors       = ["Vinay Verma"]
   spec.email         = ["1mv1n4yv3rm4@gmail.com"]
