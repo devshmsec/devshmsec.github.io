@@ -8,10 +8,7 @@ permalink: /about.html
 
 ### Programming Languages
 
-* Python
-* PHP
-* Javascript
-* C/C++
+![Hackerrank](/assets/images/about/skills.png)
 
 ### Framework and Databases
 
@@ -32,4 +29,8 @@ permalink: /about.html
 
 # Achivements
 
-### Badges
+## Badges
+
+### Hackthebox
+
+![Hackthebox](http://www.hackthebox.eu/badge/image/328158)
