@@ -12,24 +12,22 @@ permalink: /about.html
 
 ### Framework and Databases
 
-* Django
-    * SQLite
-    * MongoDB
-* Laravel
-    * MySQL
+* django
+* django REST Framework
+* postgresql
+* mongodb
 
 # Projects
 
 ### Github
 
-* Awesome WM theme (Gruvbox)
-* Django Website
-* Socket Programming
-* Blogging website Jekyll
+| Name                          | Description                                                       | Link |
+|:-------------                 |:------------------                                                |:------|
+| djangoblog                    | Blogging website built with `django`                              | https://github.com/devshmsec/djangoblog               |
+| gruvsome                      | Gruvbox like theme for `Awesome Window Manager`                   | https://github.com/devshmsec/gruvsome                 |
+| devshmsec.github.io           | This Repository is for my bloging website build with `jekyll`.    | https://github.com/devshmsec/devshmsec.github.io      |
 
-# Achivements
-
-## Badges
+# Badges
 
 ### Hackthebox
 

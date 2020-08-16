@@ -74,8 +74,7 @@ If you check the web shells repository from Xh4H's github, there are lot of webs
 
 ### Webshell
 
-We found that there is smevk.php webshell on the website.  
-So lets check it out.
+We found that there is smevk.php webshell on the website. If you read the source code for smvek.php on Xh4H's github webshell repository, the username and password is _admin_. So we can login with that credential.  
 
 ![smvek webshell](/assets/images/hackthebox/traceback/smvek.png)
 
